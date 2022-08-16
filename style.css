@@ -1,0 +1,67 @@
+*,*::before, *::after {
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-weight: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url(./WallpaperDog-5439843.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.calc {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.calc > button {
+    cursor: pointer;
+    font-size: 2.5rem;
+    border: 1px solid white;
+    outline: none;
+    background: rgb(190, 181, 181);
+}
+
+.calc > button:hover {
+    background: pink ;
+}
+
+.span2 {
+    grid-column: span 2;
+}
+
+.screen {
+    grid-column: 1 / -1;
+    background-color: rgba(63, 59, 59, 0.75);
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.screen .previousOperand {
+    color: rgb(221, 181, 188);
+    font-size: 1.7rem;
+}
+
+
+.screen .currentOperand {
+    color: rgb(139, 187, 179);
+    font-size: 2.7rem;
+}
