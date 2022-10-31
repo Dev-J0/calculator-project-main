@@ -1,4 +1,4 @@
 # calculator project
  this is calculator project from the odin project 
 
-https://d0bsidian.github.io/calculator-project-main/
+https://dev-j0.github.io/calculator-project-main/
